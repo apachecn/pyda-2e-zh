@@ -8,7 +8,7 @@
 
 +   [ApacheCN 机器学习交流群 629470233](http://shang.qq.com/wpa/qunwpa?idkey=30e5f1123a79867570f665aa3a483ca404b1c3f77737bc01ec520ed5f078ddef)
 +   [ApacheCN 学习资源](http://www.apachecn.org/)
-+   [Sklearn 与 TensorFlow 机器学习实用指南](https://github.com/apachecn/pyda-2e)
++   [Sklearn 与 TensorFlow 机器学习实用指南](https://github.com/apachecn/hands_on_Ml_with_Sklearn_and_TF)
 
 &zwj;
 
