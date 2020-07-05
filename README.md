@@ -6,9 +6,10 @@
 > 
 > 欢迎任何人参与和完善：一个人可以走的很快，但是一群人却可以走的更远。
 
++   [在线阅读](https://pyda.apachecn.org)
 +   [ApacheCN 机器学习交流群 629470233](http://shang.qq.com/wpa/qunwpa?idkey=30e5f1123a79867570f665aa3a483ca404b1c3f77737bc01ec520ed5f078ddef)
 +   [ApacheCN 学习资源](http://www.apachecn.org/)
-+   [Sklearn 与 TensorFlow 机器学习实用指南](https://github.com/apachecn/hands_on_Ml_with_Sklearn_and_TF)
++   [Sklearn 与 TensorFlow 机器学习实用指南](https://github.com/it-ebooks/hands-on-ml-2e-zh)
 
 &zwj;
 
