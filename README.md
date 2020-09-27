@@ -36,6 +36,14 @@
 
 ## 下载
 
+### PYPI
+
+```
+pip install pyda-2e-zh
+pyda-2e-zh <port>
+# 访问 http://localhost:{port} 查看文档
+```
+
 ### NPM
 
 ```
