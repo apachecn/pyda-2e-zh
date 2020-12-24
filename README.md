@@ -7,18 +7,10 @@
 > 欢迎任何人参与和完善：一个人可以走的很快，但是一群人却可以走的更远。
 
 +   [在线阅读](https://pyda.apachecn.org)
++   [在线阅读（Gitee）](https://apachecn.gitee.io/pyda-2e-zh/)
 +   [ApacheCN 机器学习交流群 629470233](http://shang.qq.com/wpa/qunwpa?idkey=30e5f1123a79867570f665aa3a483ca404b1c3f77737bc01ec520ed5f078ddef)
 +   [ApacheCN 学习资源](http://www.apachecn.org/)
 +   [Sklearn 与 TensorFlow 机器学习实用指南](https://github.com/it-ebooks/hands-on-ml-2e-zh)
-
-&zwj;
-
-+ [在线阅读](https://www.gitbook.com/book/wizardforcel/pyda-2e/details)
-+ [在线阅读（Gitee）](https://apachecn.gitee.io/pyda-2e-zh/)
-+ [PDF格式](https://www.gitbook.com/download/pdf/book/wizardforcel/pyda-2e)
-+ [EPUB格式](https://www.gitbook.com/download/epub/book/wizardforcel/pyda-2e)
-+ [MOBI格式](https://www.gitbook.com/download/mobi/book/wizardforcel/pyda-2e)
-+ [代码仓库](https://github.com/apachecn/pyda-2e-zh)
 
 下载本书代码（本书GitHub地址）：[https://github.com/wesm/pydata-book](https://github.com/wesm/pydata-book) （建议把代码下载下来之后，安装好Anaconda 3.6，在目录文件夹中用Jupyter notebook打开）
 
