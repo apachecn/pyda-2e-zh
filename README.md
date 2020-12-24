@@ -14,6 +14,7 @@
 &zwj;
 
 + [在线阅读](https://www.gitbook.com/book/wizardforcel/pyda-2e/details)
++ [在线阅读（Gitee）](https://apachecn.gitee.io/pyda-2e-zh/)
 + [PDF格式](https://www.gitbook.com/download/pdf/book/wizardforcel/pyda-2e)
 + [EPUB格式](https://www.gitbook.com/download/epub/book/wizardforcel/pyda-2e)
 + [MOBI格式](https://www.gitbook.com/download/mobi/book/wizardforcel/pyda-2e)
