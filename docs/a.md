@@ -625,7 +625,7 @@ array([[-1.37 , -1.37 , -1.37 ],
 
 ## ufunc 实例方法
 
-NumPy 的各个二元 ufunc 都有一些用于执行特定矢量化运算的特殊方法。表 A-2 汇总了这些方法，下面我将通过几个具体的例子对它们进行说明。
+NumPy 的各个二元 ufunc 都有一些用于执行特定向量化运算的特殊方法。表 A-2 汇总了这些方法，下面我将通过几个具体的例子对它们进行说明。
 
 reduce 接受一个数组参数，并通过一系列的二元运算对其值进行聚合（可指明轴向）。例如，我们可以用`np.add.reduce`对数组中各个元素进行求和：
 ```python
@@ -1153,7 +1153,7 @@ def mean_distance(x, y):
     return result / count
 ```
 
-它要比矢量化的 NumPy 快：
+它要比向量化的 NumPy 快：
 ```python
 In [215]: %timeit numba_mean_distance(x, y)
 100 loops, best of 3: 10.3 ms per loop
