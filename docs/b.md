@@ -1,6 +1,6 @@
 # 附录 B 更多关于 IPython 的内容
 
-第 2 章中，我们学习了 IPython shell 和 Jupyter notebook 的基础。本章中，我们会探索 IPython 更深层次的功能，可以从控制台或在 jupyter 使用。
+第 2 章中，我们学习了 IPython shell 和 Jupyter 笔记本的基础。本章中，我们会探索 IPython 更深层次的功能，可以从控制台或在 jupyter 使用。
 
 # B.1 使用命令历史
 
@@ -10,7 +10,7 @@ Ipython 维护了一个位于磁盘的小型数据库，用于保存执行的每
 - 在不同 session 间保存命令历史；
 - 将日志输入/输出历史到一个文件
 
-这些功能在 shell 中，要比 notebook 更为有用，因为 notebook 从设计上是将输入和输出的代码放到每个代码格子中。
+这些功能在 shell 中，要比笔记本更为有用，因为笔记本从设计上是将输入和输出的代码放到每个代码格子中。
 
 ## 搜索和重复使用命令历史
 
@@ -475,7 +475,7 @@ ncalls  tottime  percall  cumtime  percall filename:lineno(function)
 
 相似的，调用``%run -p -s cumulative cprof_example.py``有和命令行相似的作用，只是你不用离开 Ipython。
 
-在 Jupyter notebook 中，你可以使用%%prun 魔术方法（两个%）来分析一整段代码。这会弹出一个带有分析输出的独立窗口。便于快速回答一些问题，比如“为什么这段代码用了这么长时间”？
+在 Jupyter 笔记本中，你可以使用%%prun 魔术方法（两个%）来分析一整段代码。这会弹出一个带有分析输出的独立窗口。便于快速回答一些问题，比如“为什么这段代码用了这么长时间”？
 
 使用 IPython 或 Jupyter，还有一些其它工具可以让分析工作更便于理解。其中之一是 SnakeViz（https://github.com/jiffyclub/snakeviz/），它会使用 d3.js 产生一个分析结果的交互可视化界面。
 
@@ -621,7 +621,7 @@ if __name__ == '__main__':
     main()
 ```
 
-在 IPython 中运行这个程序会发生问题，你发现是什么了吗？运行之后，任何定义在 main 函数中的结果和对象都不能在 IPython 中被访问到。更好的方法是将 main 中的代码直接在模块的命名空间中执行（或者在``__name__ == '__main__':``中，如果你想让这个模块可以被引用）。这样，当你%rundiamante，就可以查看所有定义在 main 中的变量。这等价于在 Jupyter notebook 的代码格中定义一个顶级变量。
+在 IPython 中运行这个程序会发生问题，你发现是什么了吗？运行之后，任何定义在 main 函数中的结果和对象都不能在 IPython 中被访问到。更好的方法是将 main 中的代码直接在模块的命名空间中执行（或者在``__name__ == '__main__':``中，如果你想让这个模块可以被引用）。这样，当你%rundiamante，就可以查看所有定义在 main 中的变量。这等价于在 Jupyter 笔记本的代码格中定义一个顶级变量。
 
 ## 扁平优于嵌套
 
@@ -670,7 +670,7 @@ Out[580]: Message: I have a secret
 
 ## 文件和配置
 
-通过扩展配置系统，大多数 IPython 和 Jupyter notebook 的外观（颜色、提示符、行间距等等）和动作都是可以配置的。通过配置，你可以做到：
+通过扩展配置系统，大多数 IPython 和 Jupyter 笔记本的外观（颜色、提示符、行间距等等）和动作都是可以配置的。通过配置，你可以做到：
 
 - 改变颜色主题
 - 改变输入和输出提示符，或删除输出之后、输入之前的空行
@@ -729,4 +729,4 @@ $ mv ~/.jupyter/jupyter_notebook_config.py ~/.jupyter/my_custom_config.py
 # B.6 总结
 学习过本书中的代码案例，你的 Python 技能得到了一定的提升，我建议你持续学习 IPython 和 Jupyter。因为这两个项目的设计初衷就是提高生产率的，你可能还会发现一些工具，可以让你更便捷地使用 Python 和计算库。
 
-你可以在 nbviewer（https://nbviewer.jupyter.org/）上找到更多有趣的 Jupyter notebooks。
+你可以在 nbviewer（https://nbviewer.jupyter.org/）上找到更多有趣的 Jupyter 笔记本。
