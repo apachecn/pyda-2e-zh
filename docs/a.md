@@ -1106,7 +1106,7 @@ dtype: float64
 
 Numba 是一个开源项目，它可以利用 CPUs、GPUs 或其它硬件为类似 NumPy 的数据创建快速函数。它使用了 LLVM 项目（http://llvm.org/），将 Python 代码转换为机器代码。
 
-为了介绍 Numba，来考虑一个纯粹的 Python 函数，它使用 for 循环计算表达式(x - y).mean()：
+为了介绍 Numba，来考虑一个纯粹的 Python 函数，它使用`for`循环计算表达式(x - y).mean()：
 ```python
 import numpy as np
 
@@ -1161,7 +1161,7 @@ In [215]: %timeit numba_mean_distance(x, y)
 
 Numba 不能编译 Python 代码，但它支持纯 Python 写的一个部分，可以编写数值算法。
 
-Numba 是一个深厚的库，支持多种硬件、编译模式和用户插件。它还可以编译 NumPy Python API 的一部分，而不用 for 循环。Numba 也可以识别可以便以为机器编码的结构体，但是若调用 CPython API，它就不知道如何编译。Numba 的 jit 函数有一个选项，nopython=True，它限制了可以被转换为 Python 代码的代码，这些代码可以编译为 LLVM，但没有任何 Python C API 调用。jit(nopython=True)有一个简短的别名 numba.njit。
+Numba 是一个深厚的库，支持多种硬件、编译模式和用户插件。它还可以编译 NumPy Python API 的一部分，而不用`for`循环。Numba 也可以识别可以便以为机器编码的结构体，但是若调用 CPython API，它就不知道如何编译。Numba 的 jit 函数有一个选项，nopython=True，它限制了可以被转换为 Python 代码的代码，这些代码可以编译为 LLVM，但没有任何 Python C API 调用。jit(nopython=True)有一个简短的别名 numba.njit。
 
 前面的例子，我们还可以这样写：
 ```python
