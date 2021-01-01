@@ -80,6 +80,7 @@ IPython 的另一个功能是无缝连接文件系统和操作系统。这意味
 ![表 B-1 IPython 系统相关命令](img/7178691-4da7ee14be2da211.png)
 
 ## Shell 命令和别名
+
 用叹号开始一行，是告诉 IPython 执行叹号后面的所有内容。这意味着你可以删除文件（取决于操作系统，用`rm`或`del`）、改变目录或执行任何其他命令。
 
 通过给变量加上叹号，你可以在一个变量中存储命令的控制台输出。例如，在我联网的基于 Linux 的主机上，我可以获得 IP 地址为 Python 变量：
@@ -778,6 +779,7 @@ $ mv ~/.jupyter/jupyter_notebook_config.py ~/.jupyter/my_custom_config.py
 ```
 
 # B.6 总结
+
 学习过本书中的代码案例，你的 Python 技能得到了一定的提升，我建议你持续学习 IPython 和 Jupyter。因为这两个项目的设计初衷就是提高生产率的，你可能还会发现一些工具，可以让你更便捷地使用 Python 和计算库。
 
 你可以在 [nbviewer](https://nbviewer.jupyter.org/) 上找到更多有趣的 Jupyter 笔记本。
