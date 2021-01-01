@@ -152,7 +152,7 @@ py4da -> /home/wesm/code/pydata-book-source
 
 ## 交互调试器
 
-IPython 的调试器用 tab 补全、语法增强、逐行异常追踪增强了 pdb。调试代码的最佳时间就是刚刚发生错误。异常发生之后就输入%debug，就启动了调试器，进入抛出异常的堆栈框架：
+IPython 的调试器用`Tab`补全、语法增强、逐行异常追踪增强了 pdb。调试代码的最佳时间就是刚刚发生错误。异常发生之后就输入%debug，就启动了调试器，进入抛出异常的堆栈框架：
 
 ```python
 In [2]: run examples/ipython_bug.py
