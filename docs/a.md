@@ -1264,7 +1264,7 @@ memmap([[ 0.7584, -0.6605,  0.8626, ...,  0.6046, -0.6212,  2.0542],
 
 ## HDF5 及其他数组存储方式
 
-PyTables 和 h5py 这两个 Python 项目可以将 NumPy 的数组数据存储为高效且可压缩的 HDF5 格式（HDF 意思是“层次化数据格式”）。你可以安全地将好几百 GB 甚至 TB 的数据存储为 HDF5 格式。要学习 Python 使用 HDF5，请参考 pandas 线上文档。
+PyTables 和 H5Py 这两个 Python 项目可以将 NumPy 的数组数据存储为高效且可压缩的 HDF5 格式（HDF 意思是“层次化数据格式”）。你可以安全地将好几百 GB 甚至 TB 的数据存储为 HDF5 格式。要学习 Python 使用 HDF5，请参考 pandas 线上文档。
 
 # A.9 性能建议
 
