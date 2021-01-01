@@ -1102,7 +1102,7 @@ Out[212]:
 dtype: float64
 ```
 
-#A.7 用 Numba 编写快速 NumPy 函数
+# A.7 用 Numba 编写快速 NumPy 函数
 
 Numba 是一个开源项目，它可以利用 CPUs、GPUs 或其它硬件为类似 NumPy 的数据创建快速函数。它使用了 LLVM 项目（http://llvm.org/），将 Python 代码转换为机器代码。
 
