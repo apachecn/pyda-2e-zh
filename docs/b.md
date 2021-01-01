@@ -570,7 +570,7 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
 
 我的经验是用%prun (cProfile)进行宏观分析，%lprun (line_profiler)做微观分析。最好对这两个工具都了解清楚。
 
->笔记：使用%lprun 必须要指明函数名的原因是追踪每行的执行时间的损耗过多。追踪无用的函数会显著地改变结果。
+> 笔记：使用%lprun 必须要指明函数名的原因是追踪每行的执行时间的损耗过多。追踪无用的函数会显著地改变结果。
 
 # B.4 使用 IPython 高效开发的技巧
 

@@ -295,7 +295,7 @@ In [55]: arr.repeat(3)
 Out[55]: array([0, 0, 0, 1, 1, 1, 2, 2, 2])
 ```
 
->笔记：跟其他流行的数组编程语言（如 MATLAB）不同，NumPy 中很少需要对数组进行重复（replicate）。这主要是因为广播（broadcasting，我们将在下一节中讲解该技术）能更好地满足该需求。
+> 笔记：跟其他流行的数组编程语言（如 MATLAB）不同，NumPy 中很少需要对数组进行重复（replicate）。这主要是因为广播（broadcasting，我们将在下一节中讲解该技术）能更好地满足该需求。
 
 默认情况下，如果传入的是一个整数，则各元素就都会重复那么多次。如果传入的是一组整数，则各元素就可以重复不同的次数：
 ```python
@@ -744,7 +744,7 @@ In [138]: add_them(np.arange(8), np.arange(8))
 Out[138]: array([0, 2, 4, 6, 8, 10, 12, 14], dtype=object)
 ```
 
-用 frompyfunc 创建的函数总是返回 Python 对象数组，这一点很不方便。幸运的是，还有另一个办法，即 numpy.vectorize。虽然没有 frompyfunc 那么强大，但可以让你指定输出类型：
+用 frompyfunc 创建的函数总是返回 Python 对象数组，这一点很不方便。幸运的是，还有另一个办法，即`numpy.vectorize`。虽然没有 frompyfunc 那么强大，但可以让你指定输出类型：
 ```python
 In [139]: add_them = np.vectorize(add_elements, otypes=[np.float64])
 
@@ -925,7 +925,7 @@ array([[ 1.3389,  0.9111,  0.5955, -0.1872, -0.2682],
 
 ## 间接排序：argsort 和 lexsort
 
-在数据分析工作中，常常需要根据一个或多个键对数据集进行排序。例如，一个有关学生信息的数据表可能需要以姓和名进行排序（先姓后名）。这就是间接排序的一个例子，如果你阅读过有关 pandas 的章节，那就已经见过不少高级例子了。给定一个或多个键，你就可以得到一个由整数组成的索引数组（我亲切地称之为索引器），其中的索引值说明了数据在新顺序下的位置。argsort 和 numpy.lexsort 就是实现该功能的两个主要方法。下面是一个简单的例子：
+在数据分析工作中，常常需要根据一个或多个键对数据集进行排序。例如，一个有关学生信息的数据表可能需要以姓和名进行排序（先姓后名）。这就是间接排序的一个例子，如果你阅读过有关 pandas 的章节，那就已经见过不少高级例子了。给定一个或多个键，你就可以得到一个由整数组成的索引数组（我亲切地称之为索引器），其中的索引值说明了数据在新顺序下的位置。argsort 和`numpy.lexsort`就是实现该功能的两个主要方法。下面是一个简单的例子：
 ```python
 In [176]: values = np.array([5, 0, 1, 3, 2])
 
@@ -974,7 +974,7 @@ Out[188]: <zip at 0x7fa203eda1c8>
 
 刚开始使用 lexsort 的时候可能会比较容易头晕，这是因为键的应用顺序是从最后一个传入的算起的。不难看出，last_name 是先于 first_name 被应用的。
 
->笔记：`Series`和`DataFrame`的 sort_index 以及`Series`的 order 方法就是通过这些函数的变体（它们还必须考虑缺失值）实现的。
+> 笔记：`Series`和`DataFrame`的 sort_index 以及`Series`的 order 方法就是通过这些函数的变体（它们还必须考虑缺失值）实现的。
 
 ## 其他排序算法
 
@@ -1021,7 +1021,7 @@ array([-2.0016, -1.2962, -0.5557, -0.5194, -0.3718, -0.4386, -0.2047,
         1.3529,  0.8864,  1.3934,  1.9658,  1.669 ,  1.2464])
 ```
 
-当你调用 partition(arr, 3)，结果中的头三个元素是最小的三个，没有特定的顺序。numpy.argpartition 与 numpy.argsort 相似，会返回索引，重排数据为等价的顺序：
+当你调用 partition(arr, 3)，结果中的头三个元素是最小的三个，没有特定的顺序。numpy.argpartition 与`numpy.argsort`相似，会返回索引，重排数据为等价的顺序：
 ```python
 In [198]: indices = np.argpartition(arr, 3)
 
@@ -1037,7 +1037,7 @@ array([-2.0016, -1.2962, -0.5557, -0.5194, -0.3718, -0.4386, -0.2047,
         1.3529,  0.8864,  1.3934,  1.9658,  1.669 ,  1.2464])
 ```
 
-## numpy.searchsorted：在有序数组中查找元素
+## `numpy.searchsorted`：在有序数组中查找元素
 
 searchsorted 是一个在有序数组上执行二分查找的数组方法，只要将值插入到它返回的那个位置就能维持数组的有序性：
 ```python
@@ -1174,9 +1174,9 @@ def mean_distance(x, y):
 
 我建议你学习 Numba 的线上文档（http://numba.pydata.org/）。下一节介绍一个创建自定义 Numpy ufunc 对象的例子。
 
-## 用 Numba 创建自定义 numpy.ufunc 对象
+## 用 Numba 创建自定义`numpy.ufunc`对象
 
-numba.vectorize 创建了一个编译的 NumPy ufunc，它与内置的 ufunc 很像。考虑一个 numpy.add 的 Python 例子：
+numba.vectorize 创建了一个编译的 NumPy ufunc，它与内置的 ufunc 很像。考虑一个`numpy.add`的 Python 例子：
 ```python
 from numba import vectorize
 
