@@ -974,7 +974,7 @@ Out[188]: <zip at 0x7fa203eda1c8>
 
 刚开始使用 lexsort 的时候可能会比较容易头晕，这是因为键的应用顺序是从最后一个传入的算起的。不难看出，last_name 是先于 first_name 被应用的。
 
->笔记：Series 和`DataFrame`的 sort_index 以及 Series 的 order 方法就是通过这些函数的变体（它们还必须考虑缺失值）实现的。
+>笔记：`Series`和`DataFrame`的 sort_index 以及`Series`的 order 方法就是通过这些函数的变体（它们还必须考虑缺失值）实现的。
 
 ## 其他排序算法
 
